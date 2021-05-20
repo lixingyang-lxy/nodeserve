@@ -1,0 +1,31 @@
+{
+  "name": "nodeserve",
+  "version": "1.0.0",
+  "description": "a node server ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon prod.server.js --watch schemas --watch server_modules --watch models --watch router --watch utils --watch prod.server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lixingyang-lxy/nodeserve.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "lixingyang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lixingyang-lxy/nodeserve/issues"
+  },
+  "homepage": "https://github.com/lixingyang-lxy/nodeserve#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^5.12.10"
+  }
+}
