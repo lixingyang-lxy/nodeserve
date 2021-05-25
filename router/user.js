@@ -27,6 +27,7 @@ router.post('/signup',  (req, res) => {
       global.logger.error(err)
     }
     if (user) {
+      console.log(user + 'user........................................')
       res.json({
         errno: 1,
         data: '用户名已存在'
